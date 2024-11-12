@@ -1,9 +1,14 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
 const app = express();
+
+// View engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
 
 // Middleware
 app.use(cors());
@@ -18,7 +23,9 @@ mongoose.connect(process.env.MONGODB_URI)
 // Routes
 const todosRouter = require('./routes/todos');
 const authRouter = require('./routes/auth');
+const index = require('./routes/index');
 
+app.use('/api', index);
 app.use('/api/todos', todosRouter);
 app.use('/api/auth', authRouter);
 
