@@ -46,6 +46,11 @@ export function RegisterForm() {
                         Log In
                     </Link>
                 </div>
+                <div className="mt-4 text-center">
+                    <Link to="/" className="uppercase text-xs tracking-wider">
+                        Back Home
+                    </Link>
+                </div>
             </CardContent>
         </Card>
     )

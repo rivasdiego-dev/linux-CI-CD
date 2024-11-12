@@ -37,6 +37,11 @@ export function LoginForm() {
             Sign up
           </Link>
         </div>
+        <div className="mt-4 text-center">
+          <Link to="/" className="uppercase text-xs tracking-wider">
+            Back Home
+          </Link>
+        </div>
       </CardContent>
     </Card>
   )
