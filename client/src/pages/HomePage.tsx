@@ -57,7 +57,7 @@ export default function HomePage() {
                     <div className="flex justify-between h-16">
                         <div className="flex">
                             <div className="flex-shrink-0 flex items-center">
-                                <h1 className="text-xl font-bold">Todo List</h1>
+                                <h1 className="text-xl font-bold">Todo List App</h1>
                             </div>
                         </div>
                         <div className="flex items-center">
