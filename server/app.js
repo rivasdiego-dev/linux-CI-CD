@@ -25,9 +25,9 @@ const todosRouter = require('./routes/todos');
 const authRouter = require('./routes/auth');
 const index = require('./routes/index');
 
-app.use('/api', index);
-app.use('/api/todos', todosRouter);
-app.use('/api/auth', authRouter);
+app.use('', index);
+app.use('/todos', todosRouter);
+app.use('/auth', authRouter);
 
 // Error handler
 app.use((err, req, res, next) => {
