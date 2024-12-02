@@ -25,7 +25,7 @@ const todosRouter = require('./routes/todos');
 const authRouter = require('./routes/auth');
 const index = require('./routes/index');
 
-app.use('', index);
+app.use('/', index);
 app.use('/todos', todosRouter);
 app.use('/auth', authRouter);
 
